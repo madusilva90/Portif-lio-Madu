@@ -1,41 +1,71 @@
-body{
-    background-color: rgb(204, 140, 167);
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-image:url(https://wallpapers.com/images/hd/1920x1080-aesthetic-exx6pl8lkq9ai9p1.jpg);
-    background-repeat: no-repeat;
-    background-size:auto;
-}
-    /* Estilo para links */
-a {
-    text-decoration: none;
-    color: black;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a:hover {
-    color:rgba(245, 14, 141, 0.644) ; /* Cor do link ao passar o mouse */
-    text-decoration: underline;
-}
-
-/* Estilo para o menu */
-.menu ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image:url(https://i.pinimg.com/originals/58/9c/18/589c18531c692fe1a96d2d05cbdc7868.png);
+    background-repeat: no-repeat;
+    background-size:100%;
+}
+
+.cabecalho {
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    box-shadow: 0 8px 16px rgba(107, 195, 236, 0.2);
+    text-align: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-right: 50px; 
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.menu-esquerda {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    display:flex;
     list-style: none;
+    gap: 180px; 
 }
 
 .menu li {
-    margin: 0 15px; /* Espaço entre os itens do menu */
+    margin: 0;
+    font-size: larger;
 }
 
-/* Estilo para o cabeçalho */
-.cabecalho {
-    background-color: #f8f8f8; /* Cor de fundo suave */
-    border-radius: 15px;
-    padding: 20px; /* Espaçamento interno */
-    box-shadow: 0 10px 16px  rgb(185, 55, 94); /* Sombra suave */
-    margin-bottom: 20px; /* Espaço abaixo do cabeçalho */    
+.menu a {
+    color: #1b1a1a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Deixa as bordas arredondadas */
 }
+
+.menu a:hover {
+    background-color: #e4b980;
+    color: #333;
+}
+
+
+
+
